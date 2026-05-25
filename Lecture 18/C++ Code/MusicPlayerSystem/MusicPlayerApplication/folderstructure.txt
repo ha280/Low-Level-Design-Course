@@ -7,9 +7,9 @@ MusicPlayerApp/
 ├── core/                          
 │   └── AudioEngine.hpp                 # Playback engine          
 │
-├── enums/                              # All shared enum types
-│   ├── DeviceType.hpp                  # enum class DeviceType { BLUETOOTH, WIRED, HEADPHONES }
-│   └── PlayStrategyType.hpp            # enum class PlayStrategyType { SEQUENTIAL, RANDOM, CUSTOM_QUEUE }
+├── enums/                              # All shared Enum types
+│   ├── DeviceType.hpp                  # Enum class DeviceType { BLUETOOTH, WIRED, HEADPHONES }
+│   └── PlayStrategyType.hpp            # Enum class PlayStrategyType { SEQUENTIAL, RANDOM, CUSTOM_QUEUE }
 │
 ├── models/
 │   ├── Song.hpp

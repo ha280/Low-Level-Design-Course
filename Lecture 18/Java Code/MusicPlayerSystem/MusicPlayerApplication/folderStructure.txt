@@ -12,9 +12,9 @@ MusicPlayerApplication/
 │   ├── RandomPlayStrategy.java
 │   └── CustomQueueStrategy.java
 │
-├── enums/                         # All shared enum types
-│   ├── DeviceType.java            # enum class DeviceType { BLUETOOTH, WIRED, HEADPHONES }
-│   └── PlayStrategyType.java      # enum class PlayStrategyType { SEQUENTIAL, RANDOM, CUSTOM_QUEUE }
+├── enums/                         # All shared Enum types
+│   ├── DeviceType.java            # Enum class DeviceType { BLUETOOTH, WIRED, HEADPHONES }
+│   └── PlayStrategyType.java      # Enum class PlayStrategyType { SEQUENTIAL, RANDOM, CUSTOM_QUEUE }
 │
 ├── models/
 │   ├── Song.java

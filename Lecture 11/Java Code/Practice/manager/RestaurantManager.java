@@ -1,13 +1,13 @@
-package managers;
+package manager;
 
-import models.*;
+import models.Restaurant;
+
 import java.util.ArrayList;
 import java.util.List;
 
-// Singleton
 public class RestaurantManager {
-    private List<Restaurant> restaurants = new ArrayList<>();
-    private RestaurantManager instance = null;
+    static List<Restaurant> restaurantList = new ArrayList<>();
+    private static RestaurantManager instance = null;
 
     private RestaurantManager() {
         // private constructor
@@ -21,15 +21,15 @@ public class RestaurantManager {
     }
 
     public void addRestaurant(Restaurant r) {
-        restaurants.add(r);
+        restaurantList.add(r);
     }
 
-    public List<Restaurant> searchByLocation(String loc) {
+
+    public static List<Restaurant> searchByLocation(String search){
         List<Restaurant> result = new ArrayList<>();
-        loc = loc.toLowerCase();
-        for (Restaurant r : restaurants) {
+        for (Restaurant r : restaurantList) {
             String rl = r.getLocation().toLowerCase();
-            if (rl.equals(loc)) {
+            if(rl.equals(search)){
                 result.add(r);
             }
         }
